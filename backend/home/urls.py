@@ -22,6 +22,7 @@ urlpatterns = [
     path('api/users/',include('users.urls')),    
     path('api/attendance/',include('attendance.urls')),    
     path('api/company/',include('company.urls')),    
+    path('api/department/',include('department.urls')),    
     # path('api/v2/', include('home.routers')),
     
 ]
