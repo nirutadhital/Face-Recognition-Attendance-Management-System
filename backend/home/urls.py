@@ -25,6 +25,7 @@ urlpatterns = [
     path('api/role/',include('role.urls')),    
     path('api/leave/',include('leave.urls')),    
     path('api/faculty/',include('faculty.urls')),    
+    path('api/holiday/',include('holiday.urls')),    
     # path('api/v2/', include('home.routers')),
     
 ]
