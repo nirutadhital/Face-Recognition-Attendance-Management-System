@@ -51,7 +51,7 @@ class FaceRecognitionView(APIView):
     def get(self, request):
         # RTSP or HTTP URL for the mobile camera stream
         # stream_url = request.query_params.get('http://niruta:niruta@192.168.72.32:8080/video')
-        stream_url='http://niruta:niruta@192.168.72.32:8080/video'
+        stream_url='http://niruta:niruta@192.168.101.17:8080/video'
         if not stream_url:
             return Response({"error": "Stream URL is required"}, status=status.HTTP_400_BAD_REQUEST)
 

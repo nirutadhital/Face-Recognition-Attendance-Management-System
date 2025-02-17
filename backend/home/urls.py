@@ -23,6 +23,7 @@ urlpatterns = [
     path('api/attendance/',include('attendance.urls')),    
     path('api/company/',include('company.urls')),    
     path('api/role/',include('role.urls')),    
+    path('api/leave/',include('leave.urls')),    
     # path('api/v2/', include('home.routers')),
     
 ]
