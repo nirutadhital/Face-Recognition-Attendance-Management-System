@@ -26,6 +26,7 @@ urlpatterns = [
     path('api/leave/',include('leave.urls')),    
     path('api/faculty/',include('faculty.urls')),    
     path('api/holiday/',include('holiday.urls')),    
+    path('api/grades/',include('grades.urls')),    
     # path('api/v2/', include('home.routers')),
     
 ]
