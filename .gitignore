@@ -1,2 +1,4 @@
 venv/
 backend/common/photos/
+*.pyc
+__pycache__/

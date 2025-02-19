@@ -31,6 +31,15 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": [
+        "rest_framework.authentication.TokenAuthentication",
+        ],
+}
+
+AUTH_USER_MODEL = "users.User" 
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -92,7 +101,7 @@ WSGI_APPLICATION = 'home.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'attendance',
+        'NAME': 'face_attendance',
         'USER': 'postgres',
         'PASSWORD': 'niruta',
         'HOST': 'localhost',
